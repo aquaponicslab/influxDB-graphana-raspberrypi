@@ -1,0 +1,690 @@
+Starting package process...
+
+/home/pi/.gvm/bin/gvm
+Now using version go1.4.3
+GOPATH (/home/pi/.gvm/pkgsets/go1.5/influxdb:/home/pi/.gvm/pkgsets/go1.5/global) looks sane, using /home/pi/.gvm/pkgsets/go1.5/influxdb for installation.
+package github.com/influxdb/influxdb
+	imports github.com/influxdb/influxdb/client
+	imports github.com/influxdb/influxdb/models
+	imports github.com/influxdb/influxdb/pkg/escape
+	imports github.com/influxdb/influxdb/client/v2
+	imports github.com/influxdb/influxdb/cluster
+	imports github.com/boltdb/bolt
+	imports github.com/gogo/protobuf/proto
+	imports github.com/hashicorp/raft
+	imports github.com/armon/go-metrics
+	imports github.com/hashicorp/go-msgpack/codec
+	imports github.com/hashicorp/raft-boltdb
+	imports github.com/influxdb/influxdb
+	imports github.com/influxdb/influxdb/cluster/internal
+	imports github.com/influxdb/influxdb/influxql
+	imports github.com/influxdb/influxdb/pkg/slices
+	imports github.com/influxdb/influxdb/services/meta
+	imports github.com/influxdb/influxdb/services/meta/internal
+	imports github.com/influxdb/influxdb/toml
+	imports github.com/influxdb/influxdb/uuid
+	imports golang.org/x/crypto/bcrypt
+	imports golang.org/x/crypto/blowfish
+	imports github.com/influxdb/influxdb/tsdb
+	imports github.com/influxdb/influxdb/tsdb/internal
+	imports gopkg.in/fatih/pool.v2
+	imports github.com/influxdb/influxdb/cluster/internal
+	imports github.com/influxdb/influxdb/cmd/influx
+	imports github.com/influxdb/influxdb/client
+	imports github.com/influxdb/influxdb/cluster
+	imports github.com/influxdb/influxdb/cmd/influx/cli
+	imports github.com/influxdb/influxdb/importer/v8
+	imports github.com/peterh/liner
+	imports github.com/influxdb/influxdb/cmd/influx/cli
+	imports github.com/influxdb/influxdb/cmd/influx_inspect
+	imports github.com/dgryski/go-bits
+	imports github.com/dgryski/go-bitstream
+	imports github.com/golang/snappy
+	imports github.com/influxdb/influxdb/tsdb/engine
+	imports github.com/influxdb/influxdb/tsdb/engine/b1
+	imports github.com/influxdb/influxdb/tsdb/engine/bz1
+	imports github.com/influxdb/influxdb/tsdb/engine/wal
+	imports github.com/influxdb/influxdb/tsdb/engine/tsm1
+	imports github.com/jwilder/encoding/simple8b
+	imports github.com/influxdb/influxdb/cmd/influx_stress
+	imports github.com/BurntSushi/toml
+	imports github.com/influxdb/influxdb/client/v2
+	imports github.com/influxdb/influxdb/stress
+	imports github.com/influxdb/influxdb/cmd/influx_tsm
+	imports github.com/influxdb/influxdb/cmd/influx_tsm/b1
+	imports github.com/influxdb/influxdb/cmd/influx_tsm/tsdb
+	imports github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal
+	imports github.com/influxdb/influxdb/cmd/influx_tsm/bz1
+	imports github.com/influxdb/influxdb/cmd/influx_tsm/b1
+	imports github.com/influxdb/influxdb/cmd/influx_tsm/bz1
+	imports github.com/influxdb/influxdb/cmd/influx_tsm/tsdb
+	imports github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal
+	imports github.com/influxdb/influxdb/cmd/influxd
+	imports github.com/bmizerany/pat
+	imports github.com/influxdb/influxdb/cmd/influxd/backup
+	imports github.com/influxdb/influxdb/services/snapshotter
+	imports github.com/influxdb/influxdb/tcp
+	imports github.com/influxdb/influxdb/cmd/influxd/help
+	imports github.com/influxdb/influxdb/cmd/influxd/restore
+	imports github.com/influxdb/influxdb/cmd/influxd/run
+	imports github.com/influxdb/influxdb/monitor
+	imports github.com/influxdb/influxdb/services/admin
+	imports github.com/influxdb/influxdb/statik
+	imports github.com/rakyll/statik/fs
+	imports github.com/influxdb/influxdb/services/collectd
+	imports github.com/kimor79/gollectd
+	imports github.com/influxdb/influxdb/services/continuous_querier
+	imports github.com/influxdb/influxdb/services/copier
+	imports github.com/influxdb/influxdb/services/copier/internal
+	imports github.com/influxdb/influxdb/services/graphite
+	imports github.com/influxdb/influxdb/services/hh
+	imports github.com/influxdb/influxdb/services/httpd
+	imports github.com/influxdb/influxdb/services/opentsdb
+	imports github.com/influxdb/influxdb/services/precreator
+	imports github.com/influxdb/influxdb/services/retention
+	imports github.com/influxdb/influxdb/services/subscriber
+	imports github.com/influxdb/influxdb/services/udp
+	imports github.com/influxdb/usage-client/v1
+	imports github.com/influxdb/influxdb/cmd/influxd/backup
+	imports github.com/influxdb/influxdb/cmd/influxd/help
+	imports github.com/influxdb/influxdb/cmd/influxd/restore
+	imports github.com/influxdb/influxdb/cmd/influxd/run
+	imports github.com/influxdb/influxdb/importer/v8
+	imports github.com/influxdb/influxdb/influxql
+	imports github.com/influxdb/influxdb/meta: cannot find package "github.com/influxdb/influxdb/meta" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/meta (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/meta (from $GOPATH)
+	/home/pi/.gvm/pkgsets/go1.5/global/src/github.com/influxdb/influxdb/meta
+package github.com/influxdb/influxdb
+	imports github.com/influxdb/influxdb/client
+	imports github.com/influxdb/influxdb/models
+	imports github.com/influxdb/influxdb/pkg/escape
+	imports github.com/influxdb/influxdb/client/v2
+	imports github.com/influxdb/influxdb/cluster
+	imports github.com/boltdb/bolt
+	imports github.com/gogo/protobuf/proto
+	imports github.com/hashicorp/raft
+	imports github.com/armon/go-metrics
+	imports github.com/hashicorp/go-msgpack/codec
+	imports github.com/hashicorp/raft-boltdb
+	imports github.com/influxdb/influxdb
+	imports github.com/influxdb/influxdb/cluster/internal
+	imports github.com/influxdb/influxdb/influxql
+	imports github.com/influxdb/influxdb/pkg/slices
+	imports github.com/influxdb/influxdb/services/meta
+	imports github.com/influxdb/influxdb/services/meta/internal
+	imports github.com/influxdb/influxdb/toml
+	imports github.com/influxdb/influxdb/uuid
+	imports golang.org/x/crypto/bcrypt
+	imports golang.org/x/crypto/blowfish
+	imports github.com/influxdb/influxdb/tsdb
+	imports github.com/influxdb/influxdb/tsdb/internal
+	imports gopkg.in/fatih/pool.v2
+	imports github.com/influxdb/influxdb/cluster/internal
+	imports github.com/influxdb/influxdb/cmd/influx
+	imports github.com/influxdb/influxdb/client
+	imports github.com/influxdb/influxdb/cluster
+	imports github.com/influxdb/influxdb/cmd/influx/cli
+	imports github.com/influxdb/influxdb/importer/v8
+	imports github.com/peterh/liner
+	imports github.com/influxdb/influxdb/cmd/influx/cli
+	imports github.com/influxdb/influxdb/cmd/influx_inspect
+	imports github.com/dgryski/go-bits
+	imports github.com/dgryski/go-bitstream
+	imports github.com/golang/snappy
+	imports github.com/influxdb/influxdb/tsdb/engine
+	imports github.com/influxdb/influxdb/tsdb/engine/b1
+	imports github.com/influxdb/influxdb/tsdb/engine/bz1
+	imports github.com/influxdb/influxdb/tsdb/engine/wal
+	imports github.com/influxdb/influxdb/tsdb/engine/tsm1
+	imports github.com/jwilder/encoding/simple8b
+	imports github.com/influxdb/influxdb/cmd/influx_stress
+	imports github.com/BurntSushi/toml
+	imports github.com/influxdb/influxdb/client/v2
+	imports github.com/influxdb/influxdb/stress
+	imports github.com/influxdb/influxdb/cmd/influx_tsm
+	imports github.com/influxdb/influxdb/cmd/influx_tsm/b1
+	imports github.com/influxdb/influxdb/cmd/influx_tsm/tsdb
+	imports github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal
+	imports github.com/influxdb/influxdb/cmd/influx_tsm/bz1
+	imports github.com/influxdb/influxdb/cmd/influx_tsm/b1
+	imports github.com/influxdb/influxdb/cmd/influx_tsm/bz1
+	imports github.com/influxdb/influxdb/cmd/influx_tsm/tsdb
+	imports github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal
+	imports github.com/influxdb/influxdb/cmd/influxd
+	imports github.com/bmizerany/pat
+	imports github.com/influxdb/influxdb/cmd/influxd/backup
+	imports github.com/influxdb/influxdb/services/snapshotter
+	imports github.com/influxdb/influxdb/tcp
+	imports github.com/influxdb/influxdb/cmd/influxd/help
+	imports github.com/influxdb/influxdb/cmd/influxd/restore
+	imports github.com/influxdb/influxdb/cmd/influxd/run
+	imports github.com/influxdb/influxdb/monitor
+	imports github.com/influxdb/influxdb/services/admin
+	imports github.com/influxdb/influxdb/statik
+	imports github.com/rakyll/statik/fs
+	imports github.com/influxdb/influxdb/services/collectd
+	imports github.com/kimor79/gollectd
+	imports github.com/influxdb/influxdb/services/continuous_querier
+	imports github.com/influxdb/influxdb/services/copier
+	imports github.com/influxdb/influxdb/services/copier/internal
+	imports github.com/influxdb/influxdb/services/graphite
+	imports github.com/influxdb/influxdb/services/hh
+	imports github.com/influxdb/influxdb/services/httpd
+	imports github.com/influxdb/influxdb/services/opentsdb
+	imports github.com/influxdb/influxdb/services/precreator
+	imports github.com/influxdb/influxdb/services/retention
+	imports github.com/influxdb/influxdb/services/subscriber
+	imports github.com/influxdb/influxdb/services/udp
+	imports github.com/influxdb/usage-client/v1
+	imports github.com/influxdb/influxdb/cmd/influxd/backup
+	imports github.com/influxdb/influxdb/cmd/influxd/help
+	imports github.com/influxdb/influxdb/cmd/influxd/restore
+	imports github.com/influxdb/influxdb/cmd/influxd/run
+	imports github.com/influxdb/influxdb/importer/v8
+	imports github.com/influxdb/influxdb/influxql
+	imports github.com/influxdb/influxdb/meta
+	imports github.com/influxdb/influxdb/meta/internal: cannot find package "github.com/influxdb/influxdb/meta/internal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/meta/internal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/meta/internal (from $GOPATH)
+	/home/pi/.gvm/pkgsets/go1.5/global/src/github.com/influxdb/influxdb/meta/internal
+WARNING: failed to 'go get' packages.
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+# github.com/influxdb/influxdb/cmd/influx
+usage: 5l [options] main.5
+  -1	use alternate profiling code
+  -B info
+    	define ELF NT_GNU_BUILD_ID note
+  -C	check Go calls to C code
+  -D addr
+    	data address
+  -E sym
+    	entry symbol
+  -G	debug pseudo-ops
+  -I interp
+    	set ELF interp
+  -L dir
+    	add dir to library path
+  -H head
+    	header type
+  -K	add stack underflow checks
+  -M	disable software div/mod
+  -O	print pc-line tables
+  -Q	debug byte-register code gen
+  -P	debug code generation
+  -R rnd
+    	address rounding
+  -S	check type signatures
+  -T addr
+    	text address
+  -V	print version and exit
+  -W	disassemble input
+  -X name value
+    	define string data
+  -Z	clear stack frame on entry
+  -a	disassemble output
+  -c	dump call graph
+  -d	disable dynamic executable
+  -extld ld
+    	linker to run in external mode
+  -extldflags ldflags
+    	flags for external linker
+  -f	ignore version mismatch
+  -g	disable go package data checks
+  -installsuffix suffix
+    	pkg directory suffix
+  -k sym
+    	set field tracking symbol
+  -linkmode mode
+    	set link mode (internal, external, auto)
+  -n	dump symbol table
+  -o outfile
+    	set output file
+  -r dir1:dir2:...
+    	set ELF dynamic linker search path
+  -race
+    	enable race detector
+  -s	disable symbol table
+  -shared
+    	generate shared object (implies -linkmode external)
+  -tmpdir dir
+    	leave temporary files in this directory
+  -u	reject unsafe packages
+  -v	print link trace
+  -w	disable DWARF generation
+# github.com/influxdb/influxdb/cmd/influx_inspect
+usage: 5l [options] main.5
+  -1	use alternate profiling code
+  -B info
+    	define ELF NT_GNU_BUILD_ID note
+  -C	check Go calls to C code
+  -D addr
+    	data address
+  -E sym
+    	entry symbol
+  -G	debug pseudo-ops
+  -I interp
+    	set ELF interp
+  -L dir
+    	add dir to library path
+  -H head
+    	header type
+  -K	add stack underflow checks
+  -M	disable software div/mod
+  -O	print pc-line tables
+  -Q	debug byte-register code gen
+  -P	debug code generation
+  -R rnd
+    	address rounding
+  -S	check type signatures
+  -T addr
+    	text address
+  -V	print version and exit
+  -W	disassemble input
+  -X name value
+    	define string data
+  -Z	clear stack frame on entry
+  -a	disassemble output
+  -c	dump call graph
+  -d	disable dynamic executable
+  -extld ld
+    	linker to run in external mode
+  -extldflags ldflags
+    	flags for external linker
+  -f	ignore version mismatch
+  -g	disable go package data checks
+  -installsuffix suffix
+    	pkg directory suffix
+  -k sym
+    	set field tracking symbol
+  -linkmode mode
+    	set link mode (internal, external, auto)
+  -n	dump symbol table
+  -o outfile
+    	set output file
+  -r dir1:dir2:...
+    	set ELF dynamic linker search path
+  -race
+    	enable race detector
+  -s	disable symbol table
+  -shared
+    	generate shared object (implies -linkmode external)
+  -tmpdir dir
+    	leave temporary files in this directory
+  -u	reject unsafe packages
+  -v	print link trace
+  -w	disable DWARF generation
+# github.com/influxdb/influxdb/cmd/influx_stress
+usage: 5l [options] main.5
+  -1	use alternate profiling code
+  -B info
+    	define ELF NT_GNU_BUILD_ID note
+  -C	check Go calls to C code
+  -D addr
+    	data address
+  -E sym
+    	entry symbol
+  -G	debug pseudo-ops
+  -I interp
+    	set ELF interp
+  -L dir
+    	add dir to library path
+  -H head
+    	header type
+  -K	add stack underflow checks
+  -M	disable software div/mod
+  -O	print pc-line tables
+  -Q	debug byte-register code gen
+  -P	debug code generation
+  -R rnd
+    	address rounding
+  -S	check type signatures
+  -T addr
+    	text address
+  -V	print version and exit
+  -W	disassemble input
+  -X name value
+    	define string data
+  -Z	clear stack frame on entry
+  -a	disassemble output
+  -c	dump call graph
+  -d	disable dynamic executable
+  -extld ld
+    	linker to run in external mode
+  -extldflags ldflags
+    	flags for external linker
+  -f	ignore version mismatch
+  -g	disable go package data checks
+  -installsuffix suffix
+    	pkg directory suffix
+  -k sym
+    	set field tracking symbol
+  -linkmode mode
+    	set link mode (internal, external, auto)
+  -n	dump symbol table
+  -o outfile
+    	set output file
+  -r dir1:dir2:...
+    	set ELF dynamic linker search path
+  -race
+    	enable race detector
+  -s	disable symbol table
+  -shared
+    	generate shared object (implies -linkmode external)
+  -tmpdir dir
+    	leave temporary files in this directory
+  -u	reject unsafe packages
+  -v	print link trace
+  -w	disable DWARF generation
+# github.com/influxdb/influxdb/cmd/influx_tsm
+usage: 5l [options] main.5
+  -1	use alternate profiling code
+  -B info
+    	define ELF NT_GNU_BUILD_ID note
+  -C	check Go calls to C code
+  -D addr
+    	data address
+  -E sym
+    	entry symbol
+  -G	debug pseudo-ops
+  -I interp
+    	set ELF interp
+  -L dir
+    	add dir to library path
+  -H head
+    	header type
+  -K	add stack underflow checks
+  -M	disable software div/mod
+  -O	print pc-line tables
+  -Q	debug byte-register code gen
+  -P	debug code generation
+  -R rnd
+    	address rounding
+  -S	check type signatures
+  -T addr
+    	text address
+  -V	print version and exit
+  -W	disassemble input
+  -X name value
+    	define string data
+  -Z	clear stack frame on entry
+  -a	disassemble output
+  -c	dump call graph
+  -d	disable dynamic executable
+  -extld ld
+    	linker to run in external mode
+  -extldflags ldflags
+    	flags for external linker
+  -f	ignore version mismatch
+  -g	disable go package data checks
+  -installsuffix suffix
+    	pkg directory suffix
+  -k sym
+    	set field tracking symbol
+  -linkmode mode
+    	set link mode (internal, external, auto)
+  -n	dump symbol table
+  -o outfile
+    	set output file
+  -r dir1:dir2:...
+    	set ELF dynamic linker search path
+  -race
+    	enable race detector
+  -s	disable symbol table
+  -shared
+    	generate shared object (implies -linkmode external)
+  -tmpdir dir
+    	leave temporary files in this directory
+  -u	reject unsafe packages
+  -v	print link trace
+  -w	disable DWARF generation
+# github.com/influxdb/influxdb/cmd/influxd
+usage: 5l [options] main.5
+  -1	use alternate profiling code
+  -B info
+    	define ELF NT_GNU_BUILD_ID note
+  -C	check Go calls to C code
+  -D addr
+    	data address
+  -E sym
+    	entry symbol
+  -G	debug pseudo-ops
+  -I interp
+    	set ELF interp
+  -L dir
+    	add dir to library path
+  -H head
+    	header type
+  -K	add stack underflow checks
+  -M	disable software div/mod
+  -O	print pc-line tables
+  -Q	debug byte-register code gen
+  -P	debug code generation
+  -R rnd
+    	address rounding
+  -S	check type signatures
+  -T addr
+    	text address
+  -V	print version and exit
+  -W	disassemble input
+  -X name value
+    	define string data
+  -Z	clear stack frame on entry
+  -a	disassemble output
+  -c	dump call graph
+  -d	disable dynamic executable
+  -extld ld
+    	linker to run in external mode
+  -extldflags ldflags
+    	flags for external linker
+  -f	ignore version mismatch
+  -g	disable go package data checks
+  -installsuffix suffix
+    	pkg directory suffix
+  -k sym
+    	set field tracking symbol
+  -linkmode mode
+    	set link mode (internal, external, auto)
+  -n	dump symbol table
+  -o outfile
+    	set output file
+  -r dir1:dir2:...
+    	set ELF dynamic linker search path
+  -race
+    	enable race detector
+  -s	disable symbol table
+  -shared
+    	generate shared object (implies -linkmode external)
+  -tmpdir dir
+    	leave temporary files in this directory
+  -u	reject unsafe packages
+  -v	print link trace
+  -w	disable DWARF generation
+# github.com/influxdb/influxdb/services/collectd/test_client
+usage: 5l [options] main.5
+  -1	use alternate profiling code
+  -B info
+    	define ELF NT_GNU_BUILD_ID note
+  -C	check Go calls to C code
+  -D addr
+    	data address
+  -E sym
+    	entry symbol
+  -G	debug pseudo-ops
+  -I interp
+    	set ELF interp
+  -L dir
+    	add dir to library path
+  -H head
+    	header type
+  -K	add stack underflow checks
+  -M	disable software div/mod
+  -O	print pc-line tables
+  -Q	debug byte-register code gen
+  -P	debug code generation
+  -R rnd
+    	address rounding
+  -S	check type signatures
+  -T addr
+    	text address
+  -V	print version and exit
+  -W	disassemble input
+  -X name value
+    	define string data
+  -Z	clear stack frame on entry
+  -a	disassemble output
+  -c	dump call graph
+  -d	disable dynamic executable
+  -extld ld
+    	linker to run in external mode
+  -extldflags ldflags
+    	flags for external linker
+  -f	ignore version mismatch
+  -g	disable go package data checks
+  -installsuffix suffix
+    	pkg directory suffix
+  -k sym
+    	set field tracking symbol
+  -linkmode mode
+    	set link mode (internal, external, auto)
+  -n	dump symbol table
+  -o outfile
+    	set output file
+  -r dir1:dir2:...
+    	set ELF dynamic linker search path
+  -race
+    	enable race detector
+  -s	disable symbol table
+  -shared
+    	generate shared object (implies -linkmode external)
+  -tmpdir dir
+    	leave temporary files in this directory
+  -u	reject unsafe packages
+  -v	print link trace
+  -w	disable DWARF generation
+# github.com/influxdb/influxdb/stress/stress_test_server
+usage: 5l [options] main.5
+  -1	use alternate profiling code
+  -B info
+    	define ELF NT_GNU_BUILD_ID note
+  -C	check Go calls to C code
+  -D addr
+    	data address
+  -E sym
+    	entry symbol
+  -G	debug pseudo-ops
+  -I interp
+    	set ELF interp
+  -L dir
+    	add dir to library path
+  -H head
+    	header type
+  -K	add stack underflow checks
+  -M	disable software div/mod
+  -O	print pc-line tables
+  -Q	debug byte-register code gen
+  -P	debug code generation
+  -R rnd
+    	address rounding
+  -S	check type signatures
+  -T addr
+    	text address
+  -V	print version and exit
+  -W	disassemble input
+  -X name value
+    	define string data
+  -Z	clear stack frame on entry
+  -a	disassemble output
+  -c	dump call graph
+  -d	disable dynamic executable
+  -extld ld
+    	linker to run in external mode
+  -extldflags ldflags
+    	flags for external linker
+  -f	ignore version mismatch
+  -g	disable go package data checks
+  -installsuffix suffix
+    	pkg directory suffix
+  -k sym
+    	set field tracking symbol
+  -linkmode mode
+    	set link mode (internal, external, auto)
+  -n	dump symbol table
+  -o outfile
+    	set output file
+  -r dir1:dir2:...
+    	set ELF dynamic linker search path
+  -race
+    	enable race detector
+  -s	disable symbol table
+  -shared
+    	generate shared object (implies -linkmode external)
+  -tmpdir dir
+    	leave temporary files in this directory
+  -u	reject unsafe packages
+  -v	print link trace
+  -w	disable DWARF generation
+# github.com/influxdb/influxdb/tests/urlgen
+usage: 5l [options] main.5
+  -1	use alternate profiling code
+  -B info
+    	define ELF NT_GNU_BUILD_ID note
+  -C	check Go calls to C code
+  -D addr
+    	data address
+  -E sym
+    	entry symbol
+  -G	debug pseudo-ops
+  -I interp
+    	set ELF interp
+  -L dir
+    	add dir to library path
+  -H head
+    	header type
+  -K	add stack underflow checks
+  -M	disable software div/mod
+  -O	print pc-line tables
+  -Q	debug byte-register code gen
+  -P	debug code generation
+  -R rnd
+    	address rounding
+  -S	check type signatures
+  -T addr
+    	text address
+  -V	print version and exit
+  -W	disassemble input
+  -X name value
+    	define string data
+  -Z	clear stack frame on entry
+  -a	disassemble output
+  -c	dump call graph
+  -d	disable dynamic executable
+  -extld ld
+    	linker to run in external mode
+  -extldflags ldflags
+    	flags for external linker
+  -f	ignore version mismatch
+  -g	disable go package data checks
+  -installsuffix suffix
+    	pkg directory suffix
+  -k sym
+    	set field tracking symbol
+  -linkmode mode
+    	set link mode (internal, external, auto)
+  -n	dump symbol table
+  -o outfile
+    	set output file
+  -r dir1:dir2:...
+    	set ELF dynamic linker search path
+  -race
+    	enable race detector
+  -s	disable symbol table
+  -shared
+    	generate shared object (implies -linkmode external)
+  -tmpdir dir
+    	leave temporary files in this directory
+  -u	reject unsafe packages
+  -v	print link trace
+  -w	disable DWARF generation
+Build failed, unable to create package -- aborting
