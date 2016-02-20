@@ -1,0 +1,1388 @@
+Last login: Sun Jan 24 23:13:12 on ttys001
+Ecks:~ alanionita$ arp -a
+vigor.router (192.168.1.1) at 0:1d:aa:d6:76:60 on en0 ifscope [ethernet]
+? (192.168.1.14) at 54:35:30:c4:e6:9 on en0 ifscope [ethernet]
+? (192.168.1.18) at 0:21:6b:c9:c6:c4 on en0 ifscope [ethernet]
+? (192.168.1.121) at 0:25:64:f1:a6:e6 on en0 ifscope [ethernet]
+? (192.168.1.255) at ff:ff:ff:ff:ff:ff on en0 ifscope [ethernet]
+? (192.168.99.255) at ff:ff:ff:ff:ff:ff on vboxnet0 ifscope [ethernet]
+Ecks:~ alanionita$ ssh pi@192.168.1.121
+ssh: connect to host 192.168.1.121 port 22: Connection refused
+Ecks:~ alanionita$ ssh pi@192.168.1.14
+ssh: connect to host 192.168.1.14 port 22: Operation timed out
+Ecks:~ alanionita$ ssh pi@192.168.1.24
+The authenticity of host '192.168.1.24 (192.168.1.24)' can't be established.
+ECDSA key fingerprint is SHA256:V+AjxHcxJChH1c6JJorKFx1cer2bvnGzDZWEYPE+Eg0.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '192.168.1.24' (ECDSA) to the list of known hosts.
+pi@192.168.1.24's password: 
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Wed Jan 27 18:28:35 2016 from 192.168.1.18
+pi@raspberrypi:~ $ cd .gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb
+pi@raspberrypi:~/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb $ ./package.sh -t deb -p 0.9.6
+
+Starting package process...
+
+/home/pi/.gvm/bin/gvm
+Now using version go1.4.3
+GOPATH (/home/pi/.gvm/pkgsets/go1.5.1/global) looks sane, using /home/pi/.gvm/pkgsets/go1.5.1/global for installation.
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/client: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/client"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/client/v2: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/client/v2"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cluster: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cluster"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cluster/internal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cluster/internal"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx/cli: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx/cli"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_inspect: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_inspect"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_stress: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_stress"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/b1: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/b1"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/bz1: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/bz1"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/backup: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/backup"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/help: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/help"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/restore: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/restore"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/run: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/run"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/importer/v8: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/importer/v8"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/influxql: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/influxql"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/models: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/models"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/monitor: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/monitor"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/pkg/escape: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/pkg/escape"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/pkg/slices: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/pkg/slices"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/admin: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/admin"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/collectd: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/collectd"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/collectd/test_client: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/collectd/test_client"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/continuous_querier: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/continuous_querier"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/copier: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/copier"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/copier/internal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/copier/internal"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/graphite: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/graphite"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/hh: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/hh"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/httpd: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/httpd"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/meta: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/meta"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/meta/internal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/meta/internal"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/opentsdb: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/opentsdb"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/precreator: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/precreator"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/retention: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/retention"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/snapshotter: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/snapshotter"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/subscriber: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/subscriber"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/udp: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/udp"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/statik: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/statik"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/stress: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/stress"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/stress/stress_test_server: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/stress/stress_test_server"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tcp: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tcp"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tests/urlgen: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tests/urlgen"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/toml: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/toml"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/b1: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/b1"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/bz1: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/bz1"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/tsm1: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/tsm1"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/wal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/wal"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/internal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/internal"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/uuid: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/uuid"
+WARNING: failed to 'go get' packages.
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+client/influxdb.go:16:2: cannot find package "github.com/influxdb/influxdb/models" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/models (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/models (from $GOPATH)
+cluster/rpc.go:7:2: cannot find package "github.com/gogo/protobuf/proto" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/gogo/protobuf/proto (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/gogo/protobuf/proto (from $GOPATH)
+cluster/points_writer.go:13:2: cannot find package "github.com/influxdb/influxdb" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb (from $GOPATH)
+cluster/rpc.go:8:2: cannot find package "github.com/influxdb/influxdb/cluster/internal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cluster/internal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cluster/internal (from $GOPATH)
+cluster/service.go:16:2: cannot find package "github.com/influxdb/influxdb/influxql" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/influxql (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/influxql (from $GOPATH)
+cluster/balancer.go:6:2: cannot find package "github.com/influxdb/influxdb/services/meta" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/meta (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/meta (from $GOPATH)
+cluster/config.go:6:2: cannot find package "github.com/influxdb/influxdb/toml" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/toml (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/toml (from $GOPATH)
+cluster/points_writer.go:16:2: cannot find package "github.com/influxdb/influxdb/tsdb" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb (from $GOPATH)
+cluster/client_pool.go:7:2: cannot find package "gopkg.in/fatih/pool.v2" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/gopkg.in/fatih/pool.v2 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/gopkg.in/fatih/pool.v2 (from $GOPATH)
+cmd/influx/main.go:8:2: cannot find package "github.com/influxdb/influxdb/client" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/client (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/client (from $GOPATH)
+cmd/influx/main.go:9:2: cannot find package "github.com/influxdb/influxdb/cmd/influx/cli" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influx/cli (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influx/cli (from $GOPATH)
+cmd/influx/cli/cli.go:22:2: cannot find package "github.com/influxdb/influxdb/cluster" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cluster (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cluster (from $GOPATH)
+cmd/influx/cli/cli.go:23:2: cannot find package "github.com/influxdb/influxdb/importer/v8" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/importer/v8 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/importer/v8 (from $GOPATH)
+cmd/influx/cli/cli.go:24:2: cannot find package "github.com/peterh/liner" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/peterh/liner (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/peterh/liner (from $GOPATH)
+cmd/influx_inspect/tsm.go:15:2: cannot find package "github.com/golang/snappy" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/golang/snappy (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/golang/snappy (from $GOPATH)
+cmd/influx_inspect/main.go:8:2: cannot find package "github.com/influxdb/influxdb/tsdb/engine" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/engine (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/engine (from $GOPATH)
+cmd/influx_inspect/tsm.go:17:2: cannot find package "github.com/influxdb/influxdb/tsdb/engine/tsm1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/engine/tsm1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/engine/tsm1 (from $GOPATH)
+cmd/influx_stress/influx_stress.go:9:2: cannot find package "github.com/influxdb/influxdb/stress" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/stress (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/stress (from $GOPATH)
+cmd/influx_tsm/main.go:17:2: cannot find package "github.com/influxdb/influxdb/cmd/influx_tsm/b1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influx_tsm/b1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influx_tsm/b1 (from $GOPATH)
+cmd/influx_tsm/main.go:18:2: cannot find package "github.com/influxdb/influxdb/cmd/influx_tsm/bz1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influx_tsm/bz1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influx_tsm/bz1 (from $GOPATH)
+cmd/influx_tsm/main.go:19:2: cannot find package "github.com/influxdb/influxdb/cmd/influx_tsm/tsdb" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb (from $GOPATH)
+cmd/influx_tsm/b1/reader.go:9:2: cannot find package "github.com/boltdb/bolt" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/boltdb/bolt (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/boltdb/bolt (from $GOPATH)
+cmd/influx_tsm/tsdb/types.go:7:2: cannot find package "github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal (from $GOPATH)
+cmd/influx_tsm/tsdb/database.go:12:2: cannot find package "github.com/influxdb/influxdb/pkg/slices" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/pkg/slices (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/pkg/slices (from $GOPATH)
+cmd/influxd/main.go:15:2: cannot find package "github.com/influxdb/influxdb/cmd/influxd/backup" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influxd/backup (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influxd/backup (from $GOPATH)
+cmd/influxd/main.go:16:2: cannot find package "github.com/influxdb/influxdb/cmd/influxd/help" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influxd/help (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influxd/help (from $GOPATH)
+cmd/influxd/main.go:17:2: cannot find package "github.com/influxdb/influxdb/cmd/influxd/restore" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influxd/restore (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influxd/restore (from $GOPATH)
+cmd/influxd/main.go:18:2: cannot find package "github.com/influxdb/influxdb/cmd/influxd/run" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influxd/run (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influxd/run (from $GOPATH)
+cmd/influxd/backup/backup.go:18:2: cannot find package "github.com/influxdb/influxdb/services/snapshotter" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/snapshotter (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/snapshotter (from $GOPATH)
+cmd/influxd/backup/backup.go:19:2: cannot find package "github.com/influxdb/influxdb/tcp" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tcp (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tcp (from $GOPATH)
+cmd/influxd/run/command.go:16:2: cannot find package "github.com/BurntSushi/toml" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/BurntSushi/toml (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/BurntSushi/toml (from $GOPATH)
+cmd/influxd/run/config.go:15:2: cannot find package "github.com/influxdb/influxdb/monitor" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/monitor (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/monitor (from $GOPATH)
+cmd/influxd/run/config.go:16:2: cannot find package "github.com/influxdb/influxdb/services/admin" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/admin (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/admin (from $GOPATH)
+cmd/influxd/run/config.go:17:2: cannot find package "github.com/influxdb/influxdb/services/collectd" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/collectd (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/collectd (from $GOPATH)
+cmd/influxd/run/config.go:18:2: cannot find package "github.com/influxdb/influxdb/services/continuous_querier" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/continuous_querier (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/continuous_querier (from $GOPATH)
+cmd/influxd/run/server.go:19:2: cannot find package "github.com/influxdb/influxdb/services/copier" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/copier (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/copier (from $GOPATH)
+cmd/influxd/run/config.go:19:2: cannot find package "github.com/influxdb/influxdb/services/graphite" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/graphite (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/graphite (from $GOPATH)
+cmd/influxd/run/config.go:20:2: cannot find package "github.com/influxdb/influxdb/services/hh" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/hh (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/hh (from $GOPATH)
+cmd/influxd/run/config.go:21:2: cannot find package "github.com/influxdb/influxdb/services/httpd" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/httpd (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/httpd (from $GOPATH)
+cmd/influxd/run/config.go:23:2: cannot find package "github.com/influxdb/influxdb/services/opentsdb" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/opentsdb (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/opentsdb (from $GOPATH)
+cmd/influxd/run/config.go:24:2: cannot find package "github.com/influxdb/influxdb/services/precreator" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/precreator (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/precreator (from $GOPATH)
+cmd/influxd/run/config.go:25:2: cannot find package "github.com/influxdb/influxdb/services/retention" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/retention (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/retention (from $GOPATH)
+cmd/influxd/run/config.go:26:2: cannot find package "github.com/influxdb/influxdb/services/subscriber" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/subscriber (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/subscriber (from $GOPATH)
+cmd/influxd/run/config.go:27:2: cannot find package "github.com/influxdb/influxdb/services/udp" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/udp (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/udp (from $GOPATH)
+cmd/influxd/run/server.go:32:2: cannot find package "github.com/influxdb/usage-client/v1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/usage-client/v1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/usage-client/v1 (from $GOPATH)
+models/points.go:14:2: cannot find package "github.com/influxdb/influxdb/pkg/escape" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/pkg/escape (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/pkg/escape (from $GOPATH)
+services/admin/service.go:13:2: cannot find package "github.com/influxdb/influxdb/statik" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/statik (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/statik (from $GOPATH)
+services/admin/service.go:14:2: cannot find package "github.com/rakyll/statik/fs" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/rakyll/statik/fs (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/rakyll/statik/fs (from $GOPATH)
+services/collectd/service.go:18:2: cannot find package "github.com/kimor79/gollectd" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/kimor79/gollectd (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/kimor79/gollectd (from $GOPATH)
+services/collectd/test_client/client.go:4:2: cannot find package "collectd.org/api" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/collectd.org/api (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/collectd.org/api (from $GOPATH)
+services/collectd/test_client/client.go:5:2: cannot find package "collectd.org/network" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/collectd.org/network (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/collectd.org/network (from $GOPATH)
+services/copier/service.go:15:2: cannot find package "github.com/influxdb/influxdb/services/copier/internal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/copier/internal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/copier/internal (from $GOPATH)
+services/httpd/handler.go:20:2: cannot find package "github.com/bmizerany/pat" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/bmizerany/pat (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/bmizerany/pat (from $GOPATH)
+services/httpd/handler.go:28:2: cannot find package "github.com/influxdb/influxdb/uuid" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/uuid (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/uuid (from $GOPATH)
+services/meta/handler.go:19:2: cannot find package "github.com/hashicorp/raft" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/hashicorp/raft (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/hashicorp/raft (from $GOPATH)
+services/meta/raft_state.go:15:2: cannot find package "github.com/hashicorp/raft-boltdb" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/hashicorp/raft-boltdb (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/hashicorp/raft-boltdb (from $GOPATH)
+services/meta/client.go:22:2: cannot find package "github.com/influxdb/influxdb/services/meta/internal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/meta/internal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/meta/internal (from $GOPATH)
+services/meta/client.go:25:2: cannot find package "golang.org/x/crypto/bcrypt" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/golang.org/x/crypto/bcrypt (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/golang.org/x/crypto/bcrypt (from $GOPATH)
+stress/basic.go:14:2: cannot find package "github.com/influxdb/influxdb/client/v2" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/client/v2 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/client/v2 (from $GOPATH)
+stress/stress_test_server/server.go:6:2: cannot find package "github.com/paulbellamy/ratecounter" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/paulbellamy/ratecounter (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/paulbellamy/ratecounter (from $GOPATH)
+tsdb/meta.go:13:2: cannot find package "github.com/influxdb/influxdb/tsdb/internal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/internal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/internal (from $GOPATH)
+tsdb/engine/engine.go:4:2: cannot find package "github.com/influxdb/influxdb/tsdb/engine/b1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/engine/b1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/engine/b1 (from $GOPATH)
+tsdb/engine/engine.go:5:2: cannot find package "github.com/influxdb/influxdb/tsdb/engine/bz1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/engine/bz1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/engine/bz1 (from $GOPATH)
+tsdb/engine/bz1/bz1.go:22:2: cannot find package "github.com/influxdb/influxdb/tsdb/engine/wal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/engine/wal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/engine/wal (from $GOPATH)
+tsdb/engine/tsm1/float.go:17:2: cannot find package "github.com/dgryski/go-bits" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/dgryski/go-bits (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/dgryski/go-bits (from $GOPATH)
+tsdb/engine/tsm1/float.go:18:2: cannot find package "github.com/dgryski/go-bitstream" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/dgryski/go-bitstream (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/dgryski/go-bitstream (from $GOPATH)
+tsdb/engine/tsm1/int.go:27:2: cannot find package "github.com/jwilder/encoding/simple8b" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/jwilder/encoding/simple8b (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/jwilder/encoding/simple8b (from $GOPATH)
+pi@raspberrypi:~/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb $ ./package.sh -t deb -p 0.9.4
+
+Starting package process...
+
+/home/pi/.gvm/bin/gvm
+Now using version go1.4.3
+GOPATH (/home/pi/.gvm/pkgsets/go1.5.1/global) looks sane, using /home/pi/.gvm/pkgsets/go1.5.1/global for installation.
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/client: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/client"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/client/v2: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/client/v2"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cluster: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cluster"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cluster/internal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cluster/internal"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx/cli: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx/cli"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_inspect: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_inspect"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_stress: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_stress"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/b1: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/b1"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/bz1: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/bz1"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/backup: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/backup"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/help: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/help"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/restore: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/restore"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/run: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/run"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/importer/v8: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/importer/v8"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/influxql: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/influxql"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/models: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/models"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/monitor: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/monitor"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/pkg/escape: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/pkg/escape"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/pkg/slices: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/pkg/slices"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/admin: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/admin"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/collectd: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/collectd"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/collectd/test_client: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/collectd/test_client"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/continuous_querier: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/continuous_querier"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/copier: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/copier"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/copier/internal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/copier/internal"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/graphite: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/graphite"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/hh: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/hh"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/httpd: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/httpd"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/meta: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/meta"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/meta/internal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/meta/internal"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/opentsdb: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/opentsdb"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/precreator: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/precreator"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/retention: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/retention"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/snapshotter: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/snapshotter"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/subscriber: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/subscriber"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/udp: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/services/udp"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/statik: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/statik"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/stress: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/stress"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/stress/stress_test_server: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/stress/stress_test_server"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tcp: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tcp"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tests/urlgen: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tests/urlgen"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/toml: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/toml"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/b1: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/b1"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/bz1: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/bz1"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/tsm1: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/tsm1"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/wal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/wal"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/internal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/tsdb/internal"
+package _/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/uuid: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb/uuid"
+WARNING: failed to 'go get' packages.
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+client/influxdb.go:16:2: cannot find package "github.com/influxdb/influxdb/models" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/models (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/models (from $GOPATH)
+cluster/rpc.go:7:2: cannot find package "github.com/gogo/protobuf/proto" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/gogo/protobuf/proto (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/gogo/protobuf/proto (from $GOPATH)
+cluster/points_writer.go:13:2: cannot find package "github.com/influxdb/influxdb" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb (from $GOPATH)
+cluster/rpc.go:8:2: cannot find package "github.com/influxdb/influxdb/cluster/internal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cluster/internal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cluster/internal (from $GOPATH)
+cluster/service.go:16:2: cannot find package "github.com/influxdb/influxdb/influxql" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/influxql (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/influxql (from $GOPATH)
+cluster/balancer.go:6:2: cannot find package "github.com/influxdb/influxdb/services/meta" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/meta (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/meta (from $GOPATH)
+cluster/config.go:6:2: cannot find package "github.com/influxdb/influxdb/toml" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/toml (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/toml (from $GOPATH)
+cluster/points_writer.go:16:2: cannot find package "github.com/influxdb/influxdb/tsdb" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb (from $GOPATH)
+cluster/client_pool.go:7:2: cannot find package "gopkg.in/fatih/pool.v2" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/gopkg.in/fatih/pool.v2 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/gopkg.in/fatih/pool.v2 (from $GOPATH)
+cmd/influx/main.go:8:2: cannot find package "github.com/influxdb/influxdb/client" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/client (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/client (from $GOPATH)
+cmd/influx/main.go:9:2: cannot find package "github.com/influxdb/influxdb/cmd/influx/cli" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influx/cli (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influx/cli (from $GOPATH)
+cmd/influx/cli/cli.go:22:2: cannot find package "github.com/influxdb/influxdb/cluster" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cluster (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cluster (from $GOPATH)
+cmd/influx/cli/cli.go:23:2: cannot find package "github.com/influxdb/influxdb/importer/v8" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/importer/v8 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/importer/v8 (from $GOPATH)
+cmd/influx/cli/cli.go:24:2: cannot find package "github.com/peterh/liner" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/peterh/liner (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/peterh/liner (from $GOPATH)
+cmd/influx_inspect/tsm.go:15:2: cannot find package "github.com/golang/snappy" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/golang/snappy (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/golang/snappy (from $GOPATH)
+cmd/influx_inspect/main.go:8:2: cannot find package "github.com/influxdb/influxdb/tsdb/engine" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/engine (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/engine (from $GOPATH)
+cmd/influx_inspect/tsm.go:17:2: cannot find package "github.com/influxdb/influxdb/tsdb/engine/tsm1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/engine/tsm1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/engine/tsm1 (from $GOPATH)
+cmd/influx_stress/influx_stress.go:9:2: cannot find package "github.com/influxdb/influxdb/stress" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/stress (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/stress (from $GOPATH)
+cmd/influx_tsm/main.go:17:2: cannot find package "github.com/influxdb/influxdb/cmd/influx_tsm/b1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influx_tsm/b1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influx_tsm/b1 (from $GOPATH)
+cmd/influx_tsm/main.go:18:2: cannot find package "github.com/influxdb/influxdb/cmd/influx_tsm/bz1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influx_tsm/bz1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influx_tsm/bz1 (from $GOPATH)
+cmd/influx_tsm/main.go:19:2: cannot find package "github.com/influxdb/influxdb/cmd/influx_tsm/tsdb" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb (from $GOPATH)
+cmd/influx_tsm/b1/reader.go:9:2: cannot find package "github.com/boltdb/bolt" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/boltdb/bolt (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/boltdb/bolt (from $GOPATH)
+cmd/influx_tsm/tsdb/types.go:7:2: cannot find package "github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal (from $GOPATH)
+cmd/influx_tsm/tsdb/database.go:12:2: cannot find package "github.com/influxdb/influxdb/pkg/slices" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/pkg/slices (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/pkg/slices (from $GOPATH)
+cmd/influxd/main.go:15:2: cannot find package "github.com/influxdb/influxdb/cmd/influxd/backup" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influxd/backup (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influxd/backup (from $GOPATH)
+cmd/influxd/main.go:16:2: cannot find package "github.com/influxdb/influxdb/cmd/influxd/help" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influxd/help (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influxd/help (from $GOPATH)
+cmd/influxd/main.go:17:2: cannot find package "github.com/influxdb/influxdb/cmd/influxd/restore" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influxd/restore (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influxd/restore (from $GOPATH)
+cmd/influxd/main.go:18:2: cannot find package "github.com/influxdb/influxdb/cmd/influxd/run" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influxd/run (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influxd/run (from $GOPATH)
+cmd/influxd/backup/backup.go:18:2: cannot find package "github.com/influxdb/influxdb/services/snapshotter" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/snapshotter (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/snapshotter (from $GOPATH)
+cmd/influxd/backup/backup.go:19:2: cannot find package "github.com/influxdb/influxdb/tcp" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tcp (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tcp (from $GOPATH)
+cmd/influxd/run/command.go:16:2: cannot find package "github.com/BurntSushi/toml" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/BurntSushi/toml (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/BurntSushi/toml (from $GOPATH)
+cmd/influxd/run/config.go:15:2: cannot find package "github.com/influxdb/influxdb/monitor" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/monitor (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/monitor (from $GOPATH)
+cmd/influxd/run/config.go:16:2: cannot find package "github.com/influxdb/influxdb/services/admin" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/admin (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/admin (from $GOPATH)
+cmd/influxd/run/config.go:17:2: cannot find package "github.com/influxdb/influxdb/services/collectd" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/collectd (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/collectd (from $GOPATH)
+cmd/influxd/run/config.go:18:2: cannot find package "github.com/influxdb/influxdb/services/continuous_querier" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/continuous_querier (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/continuous_querier (from $GOPATH)
+cmd/influxd/run/server.go:19:2: cannot find package "github.com/influxdb/influxdb/services/copier" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/copier (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/copier (from $GOPATH)
+cmd/influxd/run/config.go:19:2: cannot find package "github.com/influxdb/influxdb/services/graphite" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/graphite (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/graphite (from $GOPATH)
+cmd/influxd/run/config.go:20:2: cannot find package "github.com/influxdb/influxdb/services/hh" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/hh (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/hh (from $GOPATH)
+cmd/influxd/run/config.go:21:2: cannot find package "github.com/influxdb/influxdb/services/httpd" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/httpd (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/httpd (from $GOPATH)
+cmd/influxd/run/config.go:23:2: cannot find package "github.com/influxdb/influxdb/services/opentsdb" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/opentsdb (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/opentsdb (from $GOPATH)
+cmd/influxd/run/config.go:24:2: cannot find package "github.com/influxdb/influxdb/services/precreator" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/precreator (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/precreator (from $GOPATH)
+cmd/influxd/run/config.go:25:2: cannot find package "github.com/influxdb/influxdb/services/retention" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/retention (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/retention (from $GOPATH)
+cmd/influxd/run/config.go:26:2: cannot find package "github.com/influxdb/influxdb/services/subscriber" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/subscriber (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/subscriber (from $GOPATH)
+cmd/influxd/run/config.go:27:2: cannot find package "github.com/influxdb/influxdb/services/udp" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/udp (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/udp (from $GOPATH)
+cmd/influxd/run/server.go:32:2: cannot find package "github.com/influxdb/usage-client/v1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/usage-client/v1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/usage-client/v1 (from $GOPATH)
+models/points.go:14:2: cannot find package "github.com/influxdb/influxdb/pkg/escape" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/pkg/escape (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/pkg/escape (from $GOPATH)
+services/admin/service.go:13:2: cannot find package "github.com/influxdb/influxdb/statik" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/statik (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/statik (from $GOPATH)
+services/admin/service.go:14:2: cannot find package "github.com/rakyll/statik/fs" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/rakyll/statik/fs (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/rakyll/statik/fs (from $GOPATH)
+services/collectd/service.go:18:2: cannot find package "github.com/kimor79/gollectd" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/kimor79/gollectd (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/kimor79/gollectd (from $GOPATH)
+services/collectd/test_client/client.go:4:2: cannot find package "collectd.org/api" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/collectd.org/api (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/collectd.org/api (from $GOPATH)
+services/collectd/test_client/client.go:5:2: cannot find package "collectd.org/network" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/collectd.org/network (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/collectd.org/network (from $GOPATH)
+services/copier/service.go:15:2: cannot find package "github.com/influxdb/influxdb/services/copier/internal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/copier/internal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/copier/internal (from $GOPATH)
+services/httpd/handler.go:20:2: cannot find package "github.com/bmizerany/pat" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/bmizerany/pat (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/bmizerany/pat (from $GOPATH)
+services/httpd/handler.go:28:2: cannot find package "github.com/influxdb/influxdb/uuid" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/uuid (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/uuid (from $GOPATH)
+services/meta/handler.go:19:2: cannot find package "github.com/hashicorp/raft" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/hashicorp/raft (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/hashicorp/raft (from $GOPATH)
+services/meta/raft_state.go:15:2: cannot find package "github.com/hashicorp/raft-boltdb" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/hashicorp/raft-boltdb (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/hashicorp/raft-boltdb (from $GOPATH)
+services/meta/client.go:22:2: cannot find package "github.com/influxdb/influxdb/services/meta/internal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/meta/internal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/meta/internal (from $GOPATH)
+services/meta/client.go:25:2: cannot find package "golang.org/x/crypto/bcrypt" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/golang.org/x/crypto/bcrypt (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/golang.org/x/crypto/bcrypt (from $GOPATH)
+stress/basic.go:14:2: cannot find package "github.com/influxdb/influxdb/client/v2" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/client/v2 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/client/v2 (from $GOPATH)
+stress/stress_test_server/server.go:6:2: cannot find package "github.com/paulbellamy/ratecounter" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/paulbellamy/ratecounter (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/paulbellamy/ratecounter (from $GOPATH)
+tsdb/meta.go:13:2: cannot find package "github.com/influxdb/influxdb/tsdb/internal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/internal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/internal (from $GOPATH)
+tsdb/engine/engine.go:4:2: cannot find package "github.com/influxdb/influxdb/tsdb/engine/b1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/engine/b1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/engine/b1 (from $GOPATH)
+tsdb/engine/engine.go:5:2: cannot find package "github.com/influxdb/influxdb/tsdb/engine/bz1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/engine/bz1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/engine/bz1 (from $GOPATH)
+tsdb/engine/bz1/bz1.go:22:2: cannot find package "github.com/influxdb/influxdb/tsdb/engine/wal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/engine/wal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/engine/wal (from $GOPATH)
+tsdb/engine/tsm1/float.go:17:2: cannot find package "github.com/dgryski/go-bits" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/dgryski/go-bits (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/dgryski/go-bits (from $GOPATH)
+tsdb/engine/tsm1/float.go:18:2: cannot find package "github.com/dgryski/go-bitstream" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/dgryski/go-bitstream (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/dgryski/go-bitstream (from $GOPATH)
+tsdb/engine/tsm1/int.go:27:2: cannot find package "github.com/jwilder/encoding/simple8b" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/jwilder/encoding/simple8b (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/jwilder/encoding/simple8b (from $GOPATH)
+Build failed, unable to create package -- aborting
+pi@raspberrypi:~/.gvm/pkgsets/go1.5.1/influxdb/src/github.com/influxdb/influxdb $ cd
+pi@raspberrypi:~ $ cd ~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb $ git clone https://github.com/influxdb/influxdb.git
+fatal: destination path 'influxdb' already exists and is not an empty directory.
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb $ cd influxdb
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb $ 
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb $ ./package.sh -t deb -p 0.9.4
+
+Starting package process...
+
+/home/pi/.gvm/bin/gvm
+Now using version go1.4.3
+GOPATH (/home/pi/.gvm/pkgsets/go1.5.1/global) looks sane, using /home/pi/.gvm/pkgsets/go1.5.1/global for installation.
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/client: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/client"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/client/v2: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/client/v2"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cluster: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cluster"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cluster/internal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cluster/internal"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx/cli: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx/cli"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx_inspect: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx_inspect"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx_stress: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx_stress"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/b1: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/b1"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/bz1: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/bz1"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influxd: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influxd"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/backup: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/backup"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/help: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/help"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/restore: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/restore"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/run: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/cmd/influxd/run"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/importer/v8: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/importer/v8"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/influxql: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/influxql"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/models: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/models"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/monitor: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/monitor"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/pkg/escape: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/pkg/escape"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/pkg/slices: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/pkg/slices"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/admin: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/admin"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/collectd: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/collectd"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/collectd/test_client: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/collectd/test_client"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/continuous_querier: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/continuous_querier"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/copier: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/copier"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/copier/internal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/copier/internal"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/graphite: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/graphite"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/hh: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/hh"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/httpd: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/httpd"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/meta: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/meta"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/meta/internal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/meta/internal"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/opentsdb: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/opentsdb"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/precreator: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/precreator"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/retention: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/retention"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/snapshotter: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/snapshotter"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/subscriber: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/subscriber"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/udp: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/services/udp"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/statik: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/statik"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/stress: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/stress"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/stress/stress_test_server: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/stress/stress_test_server"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tcp: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tcp"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tests/urlgen: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tests/urlgen"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/toml: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/toml"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tsdb: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tsdb"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tsdb/engine: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tsdb/engine"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/b1: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/b1"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/bz1: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/bz1"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/tsm1: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/tsm1"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/wal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tsdb/engine/wal"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tsdb/internal: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/tsdb/internal"
+package _/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/uuid: unrecognized import path "_/home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb/uuid"
+WARNING: failed to 'go get' packages.
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+client/influxdb.go:16:2: cannot find package "github.com/influxdb/influxdb/models" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/models (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/models (from $GOPATH)
+cluster/rpc.go:7:2: cannot find package "github.com/gogo/protobuf/proto" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/gogo/protobuf/proto (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/gogo/protobuf/proto (from $GOPATH)
+cluster/points_writer.go:13:2: cannot find package "github.com/influxdb/influxdb" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb (from $GOPATH)
+cluster/rpc.go:8:2: cannot find package "github.com/influxdb/influxdb/cluster/internal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cluster/internal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cluster/internal (from $GOPATH)
+cluster/service.go:16:2: cannot find package "github.com/influxdb/influxdb/influxql" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/influxql (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/influxql (from $GOPATH)
+cluster/balancer.go:6:2: cannot find package "github.com/influxdb/influxdb/services/meta" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/meta (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/meta (from $GOPATH)
+cluster/config.go:6:2: cannot find package "github.com/influxdb/influxdb/toml" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/toml (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/toml (from $GOPATH)
+cluster/points_writer.go:16:2: cannot find package "github.com/influxdb/influxdb/tsdb" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb (from $GOPATH)
+cluster/client_pool.go:7:2: cannot find package "gopkg.in/fatih/pool.v2" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/gopkg.in/fatih/pool.v2 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/gopkg.in/fatih/pool.v2 (from $GOPATH)
+cmd/influx/main.go:8:2: cannot find package "github.com/influxdb/influxdb/client" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/client (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/client (from $GOPATH)
+cmd/influx/main.go:9:2: cannot find package "github.com/influxdb/influxdb/cmd/influx/cli" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influx/cli (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influx/cli (from $GOPATH)
+cmd/influx/cli/cli.go:22:2: cannot find package "github.com/influxdb/influxdb/cluster" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cluster (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cluster (from $GOPATH)
+cmd/influx/cli/cli.go:23:2: cannot find package "github.com/influxdb/influxdb/importer/v8" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/importer/v8 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/importer/v8 (from $GOPATH)
+cmd/influx/cli/cli.go:24:2: cannot find package "github.com/peterh/liner" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/peterh/liner (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/peterh/liner (from $GOPATH)
+cmd/influx_inspect/tsm.go:15:2: cannot find package "github.com/golang/snappy" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/golang/snappy (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/golang/snappy (from $GOPATH)
+cmd/influx_inspect/main.go:8:2: cannot find package "github.com/influxdb/influxdb/tsdb/engine" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/engine (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/engine (from $GOPATH)
+cmd/influx_inspect/tsm.go:17:2: cannot find package "github.com/influxdb/influxdb/tsdb/engine/tsm1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/engine/tsm1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/engine/tsm1 (from $GOPATH)
+cmd/influx_stress/influx_stress.go:9:2: cannot find package "github.com/influxdb/influxdb/stress" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/stress (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/stress (from $GOPATH)
+cmd/influx_tsm/main.go:17:2: cannot find package "github.com/influxdb/influxdb/cmd/influx_tsm/b1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influx_tsm/b1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influx_tsm/b1 (from $GOPATH)
+cmd/influx_tsm/main.go:18:2: cannot find package "github.com/influxdb/influxdb/cmd/influx_tsm/bz1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influx_tsm/bz1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influx_tsm/bz1 (from $GOPATH)
+cmd/influx_tsm/main.go:19:2: cannot find package "github.com/influxdb/influxdb/cmd/influx_tsm/tsdb" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb (from $GOPATH)
+cmd/influx_tsm/b1/reader.go:9:2: cannot find package "github.com/boltdb/bolt" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/boltdb/bolt (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/boltdb/bolt (from $GOPATH)
+cmd/influx_tsm/tsdb/types.go:7:2: cannot find package "github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influx_tsm/tsdb/internal (from $GOPATH)
+cmd/influx_tsm/tsdb/database.go:12:2: cannot find package "github.com/influxdb/influxdb/pkg/slices" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/pkg/slices (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/pkg/slices (from $GOPATH)
+cmd/influxd/main.go:15:2: cannot find package "github.com/influxdb/influxdb/cmd/influxd/backup" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influxd/backup (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influxd/backup (from $GOPATH)
+cmd/influxd/main.go:16:2: cannot find package "github.com/influxdb/influxdb/cmd/influxd/help" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influxd/help (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influxd/help (from $GOPATH)
+cmd/influxd/main.go:17:2: cannot find package "github.com/influxdb/influxdb/cmd/influxd/restore" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influxd/restore (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influxd/restore (from $GOPATH)
+cmd/influxd/main.go:18:2: cannot find package "github.com/influxdb/influxdb/cmd/influxd/run" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/cmd/influxd/run (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/cmd/influxd/run (from $GOPATH)
+cmd/influxd/backup/backup.go:18:2: cannot find package "github.com/influxdb/influxdb/services/snapshotter" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/snapshotter (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/snapshotter (from $GOPATH)
+cmd/influxd/backup/backup.go:19:2: cannot find package "github.com/influxdb/influxdb/tcp" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tcp (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tcp (from $GOPATH)
+cmd/influxd/run/command.go:16:2: cannot find package "github.com/BurntSushi/toml" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/BurntSushi/toml (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/BurntSushi/toml (from $GOPATH)
+cmd/influxd/run/config.go:15:2: cannot find package "github.com/influxdb/influxdb/monitor" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/monitor (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/monitor (from $GOPATH)
+cmd/influxd/run/config.go:16:2: cannot find package "github.com/influxdb/influxdb/services/admin" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/admin (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/admin (from $GOPATH)
+cmd/influxd/run/config.go:17:2: cannot find package "github.com/influxdb/influxdb/services/collectd" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/collectd (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/collectd (from $GOPATH)
+cmd/influxd/run/config.go:18:2: cannot find package "github.com/influxdb/influxdb/services/continuous_querier" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/continuous_querier (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/continuous_querier (from $GOPATH)
+cmd/influxd/run/server.go:19:2: cannot find package "github.com/influxdb/influxdb/services/copier" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/copier (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/copier (from $GOPATH)
+cmd/influxd/run/config.go:19:2: cannot find package "github.com/influxdb/influxdb/services/graphite" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/graphite (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/graphite (from $GOPATH)
+cmd/influxd/run/config.go:20:2: cannot find package "github.com/influxdb/influxdb/services/hh" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/hh (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/hh (from $GOPATH)
+cmd/influxd/run/config.go:21:2: cannot find package "github.com/influxdb/influxdb/services/httpd" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/httpd (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/httpd (from $GOPATH)
+cmd/influxd/run/config.go:23:2: cannot find package "github.com/influxdb/influxdb/services/opentsdb" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/opentsdb (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/opentsdb (from $GOPATH)
+cmd/influxd/run/config.go:24:2: cannot find package "github.com/influxdb/influxdb/services/precreator" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/precreator (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/precreator (from $GOPATH)
+cmd/influxd/run/config.go:25:2: cannot find package "github.com/influxdb/influxdb/services/retention" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/retention (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/retention (from $GOPATH)
+cmd/influxd/run/config.go:26:2: cannot find package "github.com/influxdb/influxdb/services/subscriber" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/subscriber (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/subscriber (from $GOPATH)
+cmd/influxd/run/config.go:27:2: cannot find package "github.com/influxdb/influxdb/services/udp" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/udp (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/udp (from $GOPATH)
+cmd/influxd/run/server.go:32:2: cannot find package "github.com/influxdb/usage-client/v1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/usage-client/v1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/usage-client/v1 (from $GOPATH)
+models/points.go:14:2: cannot find package "github.com/influxdb/influxdb/pkg/escape" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/pkg/escape (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/pkg/escape (from $GOPATH)
+services/admin/service.go:13:2: cannot find package "github.com/influxdb/influxdb/statik" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/statik (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/statik (from $GOPATH)
+services/admin/service.go:14:2: cannot find package "github.com/rakyll/statik/fs" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/rakyll/statik/fs (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/rakyll/statik/fs (from $GOPATH)
+services/collectd/service.go:18:2: cannot find package "github.com/kimor79/gollectd" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/kimor79/gollectd (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/kimor79/gollectd (from $GOPATH)
+services/collectd/test_client/client.go:4:2: cannot find package "collectd.org/api" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/collectd.org/api (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/collectd.org/api (from $GOPATH)
+services/collectd/test_client/client.go:5:2: cannot find package "collectd.org/network" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/collectd.org/network (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/collectd.org/network (from $GOPATH)
+services/copier/service.go:15:2: cannot find package "github.com/influxdb/influxdb/services/copier/internal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/copier/internal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/copier/internal (from $GOPATH)
+services/httpd/handler.go:20:2: cannot find package "github.com/bmizerany/pat" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/bmizerany/pat (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/bmizerany/pat (from $GOPATH)
+services/httpd/handler.go:28:2: cannot find package "github.com/influxdb/influxdb/uuid" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/uuid (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/uuid (from $GOPATH)
+services/meta/handler.go:19:2: cannot find package "github.com/hashicorp/raft" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/hashicorp/raft (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/hashicorp/raft (from $GOPATH)
+services/meta/raft_state.go:15:2: cannot find package "github.com/hashicorp/raft-boltdb" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/hashicorp/raft-boltdb (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/hashicorp/raft-boltdb (from $GOPATH)
+services/meta/client.go:22:2: cannot find package "github.com/influxdb/influxdb/services/meta/internal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/services/meta/internal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/services/meta/internal (from $GOPATH)
+services/meta/client.go:25:2: cannot find package "golang.org/x/crypto/bcrypt" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/golang.org/x/crypto/bcrypt (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/golang.org/x/crypto/bcrypt (from $GOPATH)
+stress/basic.go:14:2: cannot find package "github.com/influxdb/influxdb/client/v2" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/client/v2 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/client/v2 (from $GOPATH)
+stress/stress_test_server/server.go:6:2: cannot find package "github.com/paulbellamy/ratecounter" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/paulbellamy/ratecounter (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/paulbellamy/ratecounter (from $GOPATH)
+tsdb/meta.go:13:2: cannot find package "github.com/influxdb/influxdb/tsdb/internal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/internal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/internal (from $GOPATH)
+tsdb/engine/engine.go:4:2: cannot find package "github.com/influxdb/influxdb/tsdb/engine/b1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/engine/b1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/engine/b1 (from $GOPATH)
+tsdb/engine/engine.go:5:2: cannot find package "github.com/influxdb/influxdb/tsdb/engine/bz1" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/engine/bz1 (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/engine/bz1 (from $GOPATH)
+tsdb/engine/bz1/bz1.go:22:2: cannot find package "github.com/influxdb/influxdb/tsdb/engine/wal" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/influxdb/influxdb/tsdb/engine/wal (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/influxdb/influxdb/tsdb/engine/wal (from $GOPATH)
+tsdb/engine/tsm1/float.go:17:2: cannot find package "github.com/dgryski/go-bits" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/dgryski/go-bits (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/dgryski/go-bits (from $GOPATH)
+tsdb/engine/tsm1/float.go:18:2: cannot find package "github.com/dgryski/go-bitstream" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/dgryski/go-bitstream (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/dgryski/go-bitstream (from $GOPATH)
+tsdb/engine/tsm1/int.go:27:2: cannot find package "github.com/jwilder/encoding/simple8b" in any of:
+	/home/pi/.gvm/gos/go1.4.3/src/github.com/jwilder/encoding/simple8b (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/github.com/jwilder/encoding/simple8b (from $GOPATH)
+Build failed, unable to create package -- aborting
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb $ go get
+go install: no install location for directory /home/pi/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb outside GOPATH
+	For more details see: go help gopath
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb $ go install test
+can't load package: package test: cannot find package "test" in any of:
+	/home/pi/.gvm/gos/go1.5.1/src/test (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/test (from $GOPATH)
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb $ cd
+pi@raspberrypi:~ $ go install test
+can't load package: package test: cannot find package "test" in any of:
+	/home/pi/.gvm/gos/go1.5.1/src/test (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/test (from $GOPATH)
+pi@raspberrypi:~ $ go install influxdb
+can't load package: package influxdb: cannot find package "influxdb" in any of:
+	/home/pi/.gvm/gos/go1.5.1/src/influxdb (from $GOROOT)
+	/home/pi/.gvm/pkgsets/go1.5.1/global/src/influxdb (from $GOPATH)
+pi@raspberrypi:~ $ cd ~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb $ gvm pkgset use influxdb
+Now using version go1.5.1@influxdb
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb $ gvm use go1.5
+Now using version go1.5
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb $ gvm pkgset use influxdb
+Now using version go1.5@influxdb
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb $ mkdir -p ~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb $ cd ~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb $ git clone https://github.com/influxdb/influxdb.git
+fatal: destination path 'influxdb' already exists and is not an empty directory.
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb $ sudo rm -r influxdb
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb $ ls -a
+.  ..  usage-client
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb $ git clone https://github.com/influxdb/influxdb.git
+Cloning into 'influxdb'...
+remote: Counting objects: 48489, done.
+remote: Compressing objects: 100% (66/66), done.
+remote: Total 48489 (delta 20), reused 0 (delta 0), pack-reused 48423
+Receiving objects: 100% (48489/48489), 35.03 MiB | 120.00 KiB/s, done.
+Resolving deltas: 100% (32803/32803), done.
+Checking connectivity... done.
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb $ cd influxdb
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb $ ./package.sh -t deb -p 0.9.4
+
+Starting package process...
+
+/home/pi/.gvm/bin/gvm
+Now using version go1.4.3
+GOPATH (/home/pi/.gvm/pkgsets/go1.5/influxdb:/home/pi/.gvm/pkgsets/go1.5/global) looks sane, using /home/pi/.gvm/pkgsets/go1.5/influxdb for installation.
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+# github.com/influxdb/influxdb/stress/stress_test_server
+usage: 5l [options] main.5
+  -1	use alternate profiling code
+  -B info
+    	define ELF NT_GNU_BUILD_ID note
+  -C	check Go calls to C code
+  -D addr
+    	data address
+  -E sym
+    	entry symbol
+  -G	debug pseudo-ops
+  -I interp
+    	set ELF interp
+  -L dir
+    	add dir to library path
+  -H head
+    	header type
+  -K	add stack underflow checks
+  -M	disable software div/mod
+  -O	print pc-line tables
+  -Q	debug byte-register code gen
+  -P	debug code generation
+  -R rnd
+    	address rounding
+  -S	check type signatures
+  -T addr
+    	text address
+  -V	print version and exit
+  -W	disassemble input
+  -X name value
+    	define string data
+  -Z	clear stack frame on entry
+  -a	disassemble output
+  -c	dump call graph
+  -d	disable dynamic executable
+  -extld ld
+    	linker to run in external mode
+  -extldflags ldflags
+    	flags for external linker
+  -f	ignore version mismatch
+  -g	disable go package data checks
+  -installsuffix suffix
+    	pkg directory suffix
+  -k sym
+    	set field tracking symbol
+  -linkmode mode
+    	set link mode (internal, external, auto)
+  -n	dump symbol table
+  -o outfile
+    	set output file
+  -r dir1:dir2:...
+    	set ELF dynamic linker search path
+  -race
+    	enable race detector
+  -s	disable symbol table
+  -shared
+    	generate shared object (implies -linkmode external)
+  -tmpdir dir
+    	leave temporary files in this directory
+  -u	reject unsafe packages
+  -v	print link trace
+  -w	disable DWARF generation
+# github.com/influxdb/influxdb/tests/urlgen
+usage: 5l [options] main.5
+  -1	use alternate profiling code
+  -B info
+    	define ELF NT_GNU_BUILD_ID note
+  -C	check Go calls to C code
+  -D addr
+    	data address
+  -E sym
+    	entry symbol
+  -G	debug pseudo-ops
+  -I interp
+    	set ELF interp
+  -L dir
+    	add dir to library path
+  -H head
+    	header type
+  -K	add stack underflow checks
+  -M	disable software div/mod
+  -O	print pc-line tables
+  -Q	debug byte-register code gen
+  -P	debug code generation
+  -R rnd
+    	address rounding
+  -S	check type signatures
+  -T addr
+    	text address
+  -V	print version and exit
+  -W	disassemble input
+  -X name value
+    	define string data
+  -Z	clear stack frame on entry
+  -a	disassemble output
+  -c	dump call graph
+  -d	disable dynamic executable
+  -extld ld
+    	linker to run in external mode
+  -extldflags ldflags
+    	flags for external linker
+  -f	ignore version mismatch
+  -g	disable go package data checks
+  -installsuffix suffix
+    	pkg directory suffix
+  -k sym
+    	set field tracking symbol
+  -linkmode mode
+    	set link mode (internal, external, auto)
+  -n	dump symbol table
+  -o outfile
+    	set output file
+  -r dir1:dir2:...
+    	set ELF dynamic linker search path
+  -race
+    	enable race detector
+  -s	disable symbol table
+  -shared
+    	generate shared object (implies -linkmode external)
+  -tmpdir dir
+    	leave temporary files in this directory
+  -u	reject unsafe packages
+  -v	print link trace
+  -w	disable DWARF generation
+# github.com/influxdb/influxdb/services/collectd/test_client
+usage: 5l [options] main.5
+  -1	use alternate profiling code
+  -B info
+    	define ELF NT_GNU_BUILD_ID note
+  -C	check Go calls to C code
+  -D addr
+    	data address
+  -E sym
+    	entry symbol
+  -G	debug pseudo-ops
+  -I interp
+    	set ELF interp
+  -L dir
+    	add dir to library path
+  -H head
+    	header type
+  -K	add stack underflow checks
+  -M	disable software div/mod
+  -O	print pc-line tables
+  -Q	debug byte-register code gen
+  -P	debug code generation
+  -R rnd
+    	address rounding
+  -S	check type signatures
+  -T addr
+    	text address
+  -V	print version and exit
+  -W	disassemble input
+  -X name value
+    	define string data
+  -Z	clear stack frame on entry
+  -a	disassemble output
+  -c	dump call graph
+  -d	disable dynamic executable
+  -extld ld
+    	linker to run in external mode
+  -extldflags ldflags
+    	flags for external linker
+  -f	ignore version mismatch
+  -g	disable go package data checks
+  -installsuffix suffix
+    	pkg directory suffix
+  -k sym
+    	set field tracking symbol
+  -linkmode mode
+    	set link mode (internal, external, auto)
+  -n	dump symbol table
+  -o outfile
+    	set output file
+  -r dir1:dir2:...
+    	set ELF dynamic linker search path
+  -race
+    	enable race detector
+  -s	disable symbol table
+  -shared
+    	generate shared object (implies -linkmode external)
+  -tmpdir dir
+    	leave temporary files in this directory
+  -u	reject unsafe packages
+  -v	print link trace
+  -w	disable DWARF generation
+# github.com/influxdb/influxdb/cmd/influx_stress
+usage: 5l [options] main.5
+  -1	use alternate profiling code
+  -B info
+    	define ELF NT_GNU_BUILD_ID note
+  -C	check Go calls to C code
+  -D addr
+    	data address
+  -E sym
+    	entry symbol
+  -G	debug pseudo-ops
+  -I interp
+    	set ELF interp
+  -L dir
+    	add dir to library path
+  -H head
+    	header type
+  -K	add stack underflow checks
+  -M	disable software div/mod
+  -O	print pc-line tables
+  -Q	debug byte-register code gen
+  -P	debug code generation
+  -R rnd
+    	address rounding
+  -S	check type signatures
+  -T addr
+    	text address
+  -V	print version and exit
+  -W	disassemble input
+  -X name value
+    	define string data
+  -Z	clear stack frame on entry
+  -a	disassemble output
+  -c	dump call graph
+  -d	disable dynamic executable
+  -extld ld
+    	linker to run in external mode
+  -extldflags ldflags
+    	flags for external linker
+  -f	ignore version mismatch
+  -g	disable go package data checks
+  -installsuffix suffix
+    	pkg directory suffix
+  -k sym
+    	set field tracking symbol
+  -linkmode mode
+    	set link mode (internal, external, auto)
+  -n	dump symbol table
+  -o outfile
+    	set output file
+  -r dir1:dir2:...
+    	set ELF dynamic linker search path
+  -race
+    	enable race detector
+  -s	disable symbol table
+  -shared
+    	generate shared object (implies -linkmode external)
+  -tmpdir dir
+    	leave temporary files in this directory
+  -u	reject unsafe packages
+  -v	print link trace
+  -w	disable DWARF generation
+# github.com/influxdb/influxdb/cmd/influx
+usage: 5l [options] main.5
+  -1	use alternate profiling code
+  -B info
+    	define ELF NT_GNU_BUILD_ID note
+  -C	check Go calls to C code
+  -D addr
+    	data address
+  -E sym
+    	entry symbol
+  -G	debug pseudo-ops
+  -I interp
+    	set ELF interp
+  -L dir
+    	add dir to library path
+  -H head
+    	header type
+  -K	add stack underflow checks
+  -M	disable software div/mod
+  -O	print pc-line tables
+  -Q	debug byte-register code gen
+  -P	debug code generation
+  -R rnd
+    	address rounding
+  -S	check type signatures
+  -T addr
+    	text address
+  -V	print version and exit
+  -W	disassemble input
+  -X name value
+    	define string data
+  -Z	clear stack frame on entry
+  -a	disassemble output
+  -c	dump call graph
+  -d	disable dynamic executable
+  -extld ld
+    	linker to run in external mode
+  -extldflags ldflags
+    	flags for external linker
+  -f	ignore version mismatch
+  -g	disable go package data checks
+  -installsuffix suffix
+    	pkg directory suffix
+  -k sym
+    	set field tracking symbol
+  -linkmode mode
+    	set link mode (internal, external, auto)
+  -n	dump symbol table
+  -o outfile
+    	set output file
+  -r dir1:dir2:...
+    	set ELF dynamic linker search path
+  -race
+    	enable race detector
+  -s	disable symbol table
+  -shared
+    	generate shared object (implies -linkmode external)
+  -tmpdir dir
+    	leave temporary files in this directory
+  -u	reject unsafe packages
+  -v	print link trace
+  -w	disable DWARF generation
+# github.com/influxdb/influxdb/cmd/influx_inspect
+usage: 5l [options] main.5
+  -1	use alternate profiling code
+  -B info
+    	define ELF NT_GNU_BUILD_ID note
+  -C	check Go calls to C code
+  -D addr
+    	data address
+  -E sym
+    	entry symbol
+  -G	debug pseudo-ops
+  -I interp
+    	set ELF interp
+  -L dir
+    	add dir to library path
+  -H head
+    	header type
+  -K	add stack underflow checks
+  -M	disable software div/mod
+  -O	print pc-line tables
+  -Q	debug byte-register code gen
+  -P	debug code generation
+  -R rnd
+    	address rounding
+  -S	check type signatures
+  -T addr
+    	text address
+  -V	print version and exit
+  -W	disassemble input
+  -X name value
+    	define string data
+  -Z	clear stack frame on entry
+  -a	disassemble output
+  -c	dump call graph
+  -d	disable dynamic executable
+  -extld ld
+    	linker to run in external mode
+  -extldflags ldflags
+    	flags for external linker
+  -f	ignore version mismatch
+  -g	disable go package data checks
+  -installsuffix suffix
+    	pkg directory suffix
+  -k sym
+    	set field tracking symbol
+  -linkmode mode
+    	set link mode (internal, external, auto)
+  -n	dump symbol table
+  -o outfile
+    	set output file
+  -r dir1:dir2:...
+    	set ELF dynamic linker search path
+  -race
+    	enable race detector
+  -s	disable symbol table
+  -shared
+    	generate shared object (implies -linkmode external)
+  -tmpdir dir
+    	leave temporary files in this directory
+  -u	reject unsafe packages
+  -v	print link trace
+  -w	disable DWARF generation
+# github.com/influxdb/influxdb/cmd/influx_tsm
+usage: 5l [options] main.5
+  -1	use alternate profiling code
+  -B info
+    	define ELF NT_GNU_BUILD_ID note
+  -C	check Go calls to C code
+  -D addr
+    	data address
+  -E sym
+    	entry symbol
+  -G	debug pseudo-ops
+  -I interp
+    	set ELF interp
+  -L dir
+    	add dir to library path
+  -H head
+    	header type
+  -K	add stack underflow checks
+  -M	disable software div/mod
+  -O	print pc-line tables
+  -Q	debug byte-register code gen
+  -P	debug code generation
+  -R rnd
+    	address rounding
+  -S	check type signatures
+  -T addr
+    	text address
+  -V	print version and exit
+  -W	disassemble input
+  -X name value
+    	define string data
+  -Z	clear stack frame on entry
+  -a	disassemble output
+  -c	dump call graph
+  -d	disable dynamic executable
+  -extld ld
+    	linker to run in external mode
+  -extldflags ldflags
+    	flags for external linker
+  -f	ignore version mismatch
+  -g	disable go package data checks
+  -installsuffix suffix
+    	pkg directory suffix
+  -k sym
+    	set field tracking symbol
+  -linkmode mode
+    	set link mode (internal, external, auto)
+  -n	dump symbol table
+  -o outfile
+    	set output file
+  -r dir1:dir2:...
+    	set ELF dynamic linker search path
+  -race
+    	enable race detector
+  -s	disable symbol table
+  -shared
+    	generate shared object (implies -linkmode external)
+  -tmpdir dir
+    	leave temporary files in this directory
+  -u	reject unsafe packages
+  -v	print link trace
+  -w	disable DWARF generation
+# github.com/influxdb/influxdb/cmd/influxd
+usage: 5l [options] main.5
+  -1	use alternate profiling code
+  -B info
+    	define ELF NT_GNU_BUILD_ID note
+  -C	check Go calls to C code
+  -D addr
+    	data address
+  -E sym
+    	entry symbol
+  -G	debug pseudo-ops
+  -I interp
+    	set ELF interp
+  -L dir
+    	add dir to library path
+  -H head
+    	header type
+  -K	add stack underflow checks
+  -M	disable software div/mod
+  -O	print pc-line tables
+  -Q	debug byte-register code gen
+  -P	debug code generation
+  -R rnd
+    	address rounding
+  -S	check type signatures
+  -T addr
+    	text address
+  -V	print version and exit
+  -W	disassemble input
+  -X name value
+    	define string data
+  -Z	clear stack frame on entry
+  -a	disassemble output
+  -c	dump call graph
+  -d	disable dynamic executable
+  -extld ld
+    	linker to run in external mode
+  -extldflags ldflags
+    	flags for external linker
+  -f	ignore version mismatch
+  -g	disable go package data checks
+  -installsuffix suffix
+    	pkg directory suffix
+  -k sym
+    	set field tracking symbol
+  -linkmode mode
+    	set link mode (internal, external, auto)
+  -n	dump symbol table
+  -o outfile
+    	set output file
+  -r dir1:dir2:...
+    	set ELF dynamic linker search path
+  -race
+    	enable race detector
+  -s	disable symbol table
+  -shared
+    	generate shared object (implies -linkmode external)
+  -tmpdir dir
+    	leave temporary files in this directory
+  -u	reject unsafe packages
+  -v	print link trace
+  -w	disable DWARF generation
+Build failed, unable to create package -- aborting
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb $ sudo dpkg -i influxdb_0.9.4_armhf.deb
+dpkg: error processing archive influxdb_0.9.4_armhf.deb (--install):
+ cannot access archive: No such file or directory
+Errors were encountered while processing:
+ influxdb_0.9.4_armhf.deb
+pi@raspberrypi:~/.gvm/pkgsets/go1.5/influxdb/src/github.com/influxdb/influxdb $ packet_write_wait: Connection to 192.168.1.24: Broken pipe
+Ecks:~ alanionita$ 

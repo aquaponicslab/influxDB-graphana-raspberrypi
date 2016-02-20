@@ -1,0 +1,309 @@
+Last login: Wed Feb  3 19:06:06 on ttys001
+Ecks:~ alanionita$ ssh pi@192.168.1.34
+pi@192.168.1.34's password: 
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Wed Feb  3 19:12:15 2016 from 192.168.1.33
+pi@raspberrypi:~ $ influxd
+Illegal instruction
+pi@raspberrypi:~ $ pwd
+/home/pi
+pi@raspberrypi:~ $ ~/gmv
+-bash: /home/pi/gmv: No such file or directory
+pi@raspberrypi:~ $ ~/gvm
+-bash: /home/pi/gvm: No such file or directory
+pi@raspberrypi:~ $ ls -al
+total 36
+drwxr-xr-x  5 pi   pi   4096 Feb  3 19:52 .
+drwxr-xr-x  3 root root 4096 Nov 21 20:32 ..
+-rw-------  1 pi   pi   2152 Feb  2 23:11 .bash_history
+-rw-r--r--  1 pi   pi    220 Nov 21 20:32 .bash_logout
+-rw-r--r--  1 pi   pi   3588 Jan 30 21:48 .bashrc
+drwxr-xr-x 15 pi   pi   4096 Jan 30 21:54 .gvm
+drwxr-xr-x  3 pi   pi   4096 Feb  3 19:52 Pimoroni
+drwxr-xr-x  2 pi   pi   4096 Feb  2 19:41 preconpiled
+-rw-r--r--  1 pi   pi    675 Nov 21 20:32 .profile
+pi@raspberrypi:~ $ cd .gvm/
+pi@raspberrypi:~/.gvm $ ls
+archive  autogen.sh  binscripts  config        environments  extra    git.bak  LICENSE  Makefile.am  pkgsets   README     scripts  Vagrantfile
+AUTHORS  bin         ChangeLog   configure.ac  examples      Gemfile  gos      logs     NEWS         Rakefile  README.md  tests    VERSION
+pi@raspberrypi:~/.gvm $ ls bin
+gvm  gvm-prompt  gvmsudo
+pi@raspberrypi:~/.gvm $ ~/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd
+-bash: /home/pi/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd: Is a directory
+pi@raspberrypi:~/.gvm $ cd
+pi@raspberrypi:~ $ ~/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd
+-bash: /home/pi/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd: Is a directory
+pi@raspberrypi:~ $ cd ~/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd
+pi@raspberrypi:~/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd $ 
+pi@raspberrypi:~/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd $ 
+pi@raspberrypi:~/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd $ ls
+influx  influxd  influx_inspect  influx_stress  influx_tsm
+pi@raspberrypi:~/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd $ ls -al
+total 28
+drwxr-xr-x  7 pi pi 4096 Jan 30 22:20 .
+drwxr-xr-x 23 pi pi 4096 Jan 30 22:20 ..
+drwxr-xr-x  3 pi pi 4096 Jan 30 22:20 influx
+drwxr-xr-x  6 pi pi 4096 Jan 30 22:20 influxd
+drwxr-xr-x  2 pi pi 4096 Jan 30 22:20 influx_inspect
+drwxr-xr-x  3 pi pi 4096 Jan 30 22:20 influx_stress
+drwxr-xr-x  5 pi pi 4096 Jan 30 22:20 influx_tsm
+pi@raspberrypi:~/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd $ cd influxd/
+pi@raspberrypi:~/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd/influxd $ ls -al
+total 32
+drwxr-xr-x 6 pi pi 4096 Jan 30 22:20 .
+drwxr-xr-x 7 pi pi 4096 Jan 30 22:20 ..
+drwxr-xr-x 2 pi pi 4096 Jan 30 22:20 backup
+drwxr-xr-x 2 pi pi 4096 Jan 30 22:20 help
+-rw-r--r-- 1 pi pi 4794 Jan 30 22:20 main.go
+drwxr-xr-x 2 pi pi 4096 Jan 30 22:20 restore
+drwxr-xr-x 2 pi pi 4096 Jan 30 22:20 run
+pi@raspberrypi:~/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd/influxd $ more main.go 
+package main
+
+import (
+	"flag"
+	"fmt"
+	"io"
+	"log"
+	"math/rand"
+	"os"
+	"os/signal"
+	"strings"
+	"syscall"
+	"time"
+
+	"github.com/influxdb/influxdb/cmd/influxd/backup"
+	"github.com/influxdb/influxdb/cmd/influxd/help"
+	"github.com/influxdb/influxdb/cmd/influxd/restore"
+	"github.com/influxdb/influxdb/cmd/influxd/run"
+)
+
+// These variables are populated via the Go linker.
+var (
+	version   = "0.9"
+	commit    string
+	branch    string
+	buildTime string
+)
+
+func init() {
+	// If commit, branch, or build time are not set, make that clear.
+	if commit == "" {
+		commit = "unknown"
+	}
+	if branch == "" {
+		branch = "unknown"
+	}
+	if buildTime == "" {
+		buildTime = "unknown"
+	}
+}
+
+func main() {
+	rand.Seed(time.Now().UnixNano())
+
+	m := NewMain()
+	if err := m.Run(os.Args[1:]...); err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
+	}
+}
+
+// Main represents the program execution.
+type Main struct {
+	Logger *log.Logger
+
+	Stdin  io.Reader
+	Stdout io.Writer
+	Stderr io.Writer
+}
+
+// NewMain return a new instance of Main.
+func NewMain() *Main {
+	return &Main{
+		Logger: log.New(os.Stderr, "[run] ", log.LstdFlags),
+		Stdin:  os.Stdin,
+		Stdout: os.Stdout,
+		Stderr: os.Stderr,
+	}
+}
+
+// Run determines and runs the command specified by the CLI args.
+func (m *Main) Run(args ...string) error {
+	name, args := ParseCommandName(args)
+
+	// Extract name from args.
+	switch name {
+	case "", "run":
+		cmd := run.NewCommand()
+
+		// Tell the server the build details.
+		cmd.Version = version
+		cmd.Commit = commit
+		cmd.Branch = branch
+		cmd.BuildTime = buildTime
+
+		if err := cmd.Run(args...); err != nil {
+			return fmt.Errorf("run: %s", err)
+		}
+
+		signalCh := make(chan os.Signal, 1)
+		signal.Notify(signalCh, os.Interrupt, syscall.SIGTERM)
+		m.Logger.Println("Listening for signals")
+
+		// Block until one of the signals above is received
+		select {
+		case <-signalCh:
+			m.Logger.Println("Signal received, initializing clea
+n shutdown...")
+			go func() {
+				cmd.Close()
+			}()
+		}
+
+		// Block again until another signal is received, a shutdown 
+timeout elapses,
+		// or the Command is gracefully closed
+		m.Logger.Println("Waiting for clean shutdown...")
+		select {
+		case <-signalCh:
+			m.Logger.Println("second signal received, initializi
+ng hard shutdown")
+		case <-time.After(time.Second * 30):
+			m.Logger.Println("time limit reached, initializing h
+ard shutdown")
+		case <-cmd.Closed:
+			m.Logger.Println("server shutdown completed")
+		}
+
+		// goodbye.
+
+	case "backup":
+		name := backup.NewCommand()
+		if err := name.Run(args...); err != nil {
+			return fmt.Errorf("backup: %s", err)
+		}
+	case "restore":
+		name := restore.NewCommand()
+		if err := name.Run(args...); err != nil {
+			return fmt.Errorf("restore: %s", err)
+		}
+	case "config":
+		if err := run.NewPrintConfigCommand().Run(args...); err != n
+il {
+			return fmt.Errorf("config: %s", err)
+		}
+	case "version":
+		if err := NewVersionCommand().Run(args...); err != nil {
+			return fmt.Errorf("version: %s", err)
+		}
+	case "help":
+		if err := help.NewCommand().Run(args...); err != nil {
+			return fmt.Errorf("help: %s", err)
+		}
+	default:
+		return fmt.Errorf(`unknown command "%s"`+"\n"+`Run 'influxd 
+help' for usage`+"\n\n", name)
+	}
+
+	return nil
+}
+
+// ParseCommandName extracts the command name and args from the args list.
+func ParseCommandName(args []string) (string, []string) {
+	// Retrieve command name as first argument.
+	var name string
+	if len(args) > 0 && !strings.HasPrefix(args[0], "-") {
+		name = args[0]
+	}
+
+	// Special case -h immediately following binary name
+	if len(args) > 0 && args[0] == "-h" {
+		name = "help"
+	}
+
+	// If command is "help" and has an argument then rewrite args to use
+ "-h".
+	if name == "help" && len(args) > 1 {
+		args[0], args[1] = args[1], "-h"
+		name = args[0]
+	}
+
+	// If a named command is specified then return it with its arguments
+.
+	if name != "" {
+		return name, args[1:]
+	}
+	return "", args
+}
+
+// VersionCommand represents the command executed by "influxd version".
+type VersionCommand struct {
+	Stdout io.Writer
+	Stderr io.Writer
+}
+
+// NewVersionCommand return a new instance of VersionCommand.
+func NewVersionCommand() *VersionCommand {
+	return &VersionCommand{
+		Stdout: os.Stdout,
+		Stderr: os.Stderr,
+	}
+}
+
+// Run prints the current version and commit info.
+func (cmd *VersionCommand) Run(args ...string) error {
+	// Parse flags in case -h is specified.
+	fs := flag.NewFlagSet("", flag.ContinueOnError)
+	fs.Usage = func() { fmt.Fprintln(cmd.Stderr, strings.TrimSpace(versi
+onUsage)) }
+	if err := fs.Parse(args); err != nil {
+		return err
+	}
+
+	// Print version info.
+	fmt.Fprintf(cmd.Stdout, "InfluxDB v%s (git: %s %s, built %s)\n", ver
+sion, branch, commit, buildTime)
+
+	return nil
+}
+
+var versionUsage = `
+usage: version
+
+	version displays the InfluxDB version, build branch and git commit h
+ash
+`
+pi@raspberrypi:~/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd/influxd $ ls -la
+total 32
+drwxr-xr-x 6 pi pi 4096 Jan 30 22:20 .
+drwxr-xr-x 7 pi pi 4096 Jan 30 22:20 ..
+drwxr-xr-x 2 pi pi 4096 Jan 30 22:20 backup
+drwxr-xr-x 2 pi pi 4096 Jan 30 22:20 help
+-rw-r--r-- 1 pi pi 4794 Jan 30 22:20 main.go
+drwxr-xr-x 2 pi pi 4096 Jan 30 22:20 restore
+drwxr-xr-x 2 pi pi 4096 Jan 30 22:20 run
+pi@raspberrypi:~/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd/influxd $ ./main.go
+-bash: ./main.go: Permission denied
+pi@raspberrypi:~/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd/influxd $ chmod 777 main.go 
+pi@raspberrypi:~/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd/influxd $ ls -la
+total 32
+drwxr-xr-x 6 pi pi 4096 Jan 30 22:20 .
+drwxr-xr-x 7 pi pi 4096 Jan 30 22:20 ..
+drwxr-xr-x 2 pi pi 4096 Jan 30 22:20 backup
+drwxr-xr-x 2 pi pi 4096 Jan 30 22:20 help
+-rwxrwxrwx 1 pi pi 4794 Jan 30 22:20 main.go
+drwxr-xr-x 2 pi pi 4096 Jan 30 22:20 restore
+drwxr-xr-x 2 pi pi 4096 Jan 30 22:20 run
+pi@raspberrypi:~/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd/influxd $ ./main.go
+./main.go: line 1: package: command not found
+./main.go: line 3: syntax error near unexpected token `newline'
+./main.go: line 3: `import ('
+pi@raspberrypi:~/.gvm/pkgsets/go1.4.3/global/src/github.com/influxdb/influxdb/cmd/influxd $ packet_write_wait: Connection to 192.168.1.34: Broken pipe
+Ecks:~ alanionita$ 
